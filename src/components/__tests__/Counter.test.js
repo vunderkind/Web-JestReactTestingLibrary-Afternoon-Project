@@ -37,19 +37,19 @@ describe('Counter component', () => {
     expect(tools.queryByText(/2/)).toBeInTheDocument();
   });
 
-  it('can increment the count by one by clicking decrement', () => {
+  it('can decrement the count by one by clicking decrement', () => {
     // implement
   });
 
-  it('can reset the count by one by clicking rest', () => {
+  it('can reset the count clicking rest', () => {
     // implement
   });
 
-  it('prevents the count from going over 5', () => {
+  it('prevents the count from going over an upper limit', () => {
     // implement
   });
 
-  it('prevents the count from going under -5', () => {
+  it('prevents the count from going under a lower limit', () => {
     // implement
   });
 
