@@ -38,11 +38,20 @@ describe('Counter component', () => {
   });
 
   it('can decrement the count by one by clicking decrement', () => {
+    const decButton = tools.queryByTestId('incButton');
+
+    rtl.fireEvent.click(decButton);
+    expect(tools.queryByText(/1/)).toBeInTheDocument();
+    expect(tools.queryByText(/0/)).not.toBeInTheDocument();
+
+    rtl.fireEvent.click(decButton);
+    expect(tools.queryByText(/1/)).not.toBeInTheDocument();
+    expect(tools.queryByText(/2/)).toBeInTheDocument();
     // implement
   });
 
   it('can reset the count clicking rest', () => {
-    // implement
+    // implement code here
   });
 
   it('prevents the count from going over an upper limit', () => {
