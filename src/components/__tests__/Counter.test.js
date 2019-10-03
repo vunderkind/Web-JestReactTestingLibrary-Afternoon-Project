@@ -51,7 +51,7 @@ describe('Counter component', () => {
   });
 
   it('can reset the count clicking rest', () => {
-    // implement
+    // implement code here
   });
 
   it('prevents the count from going over an upper limit', () => {
